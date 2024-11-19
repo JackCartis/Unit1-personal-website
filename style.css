@@ -1,0 +1,44 @@
+body{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+img{
+    width: 300px;
+    border-radius: 40px;
+}
+
+.header{
+    background-color: rgb(153, 153, 153);
+    display: flex;
+    justify-content: space-between;
+    gap: 40%;
+    margin-bottom: 40px;
+}
+
+.header-name{
+
+}
+
+
+h1{
+    font-size: 35pt;
+}
+
+
+
+.header-navigation{
+    vertical-align: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+.nav-but{
+    font-size: 30px;
+    text-decoration: none;
+}
