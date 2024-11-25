@@ -6,16 +6,27 @@ body{
 }
 
 img{
-    width: 300px;
+    min-width: none;
+    max-width: 300px;
     border-radius: 40px;
+    padding: 20px;
+    background-color: teal;
 }
 
 .header{
-    background-color: rgb(153, 153, 153);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 40%;
     margin-bottom: 40px;
+    color:rgb(2, 90, 90);
+}
+
+a{
+    color:rgb(2, 90, 90);
+}
+
+a:visited{
+    color: rgb(2, 90, 90);
 }
 
 .header-name{
@@ -42,3 +53,47 @@ h1{
     font-size: 30px;
     text-decoration: none;
 }
+
+.profile-talent-box{
+    text-align: center;
+}
+
+.talent-prof-box{
+    color: rgb(5, 102, 102);
+}
+
+.bix-box{
+    display: flex;
+    width:80%;
+    margin: auto;
+
+}
+
+.des-box{
+    max-width: 60%;
+    background-color: teal;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 50px;
+    color: #FFFDD0;
+}
+
+p{
+    font-size: 45px;
+}
+
+h3{
+    font-size: 32px;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 613;
+    font-style: normal;
+    background-color: white;
+    color: rgb(5, 102, 102);
+    border-radius: 25px;
+    padding: 20px;
+    font-weight: ;
+}
+
+
+/* About page CSS */
