@@ -93,7 +93,6 @@ p{
     color: rgb(5, 102, 102);
     border-radius: 25px;
     padding: 20px;
-    font-weight: ;
 }
 
 #current{
@@ -102,6 +101,188 @@ p{
 
 
 /* About page CSS */
+h3{
+    font-size: 30px;
+    color: rgb(1, 26, 26);
+}
+
+.p{
+    font-size: 20px;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 59, 59);
+    transition: 0.4s;
+}
+
+.p:hover{
+    color: rgb(0, 0, 0);
+}
+
+.about-page-big-box{
+
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    width: 95%
+}
+
+.about-box{
+    background-color: rgb(216, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.about-box:hover{
+    background-color: rgb(155, 207, 207);
+    cursor: pointer;
+}
+
+#contact-me-but{
+    text-decoration: none;
+    transition: 0.2s;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    margin: auto;
+    margin-top: 60px;
+    display: block;
+    box-shadow: inset 2px 2px 2px 1px rgba(116, 116, 116, 0.2);
+}
+
+#contact-me-but:hover{
+    background-color: rgba(116, 116, 116, 0.2);
+    cursor:pointer;
+}
+
+#contact-me-but:active{
+    background-color: teal;
+}
+
+#cont-link{
+    text-decoration: none;
+}
+
+
+
+/* Portfolio page */
+.portfolio-big-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    width: 80%;
+}
+
+.portfolio-big-box div{
+    transition: 0.2s;
+    background-color: rgb(234, 255, 255);
+    padding: 10px 0px 40px 50px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 2px 1px rgba(88, 88, 88, 0.2);
+}
+
+.portfolio-big-box div h2{
+    font-size: 35px;
+}
+
+.portfolio-big-box div p{
+    font-size: 22px;
+}
+
+.portfolio-big-box div a{
+    font-size: 20px;
+}
+
+
+/* Contact page */
+
+#lets-get{
+    color: teal;
+}
+
+.contact-div{
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(243, 245, 245);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.contact-div:hover{
+    background-color: rgb(231, 244, 244);
+}
+
+.contact-div p{
+    font-size: 23px;
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100,"YTLC" 500;
+}
+
+.contact-div input{
+    padding-right: 250px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
+    color: rgb(51, 51, 51);
+
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    box-shadow: inset 2px 2px 2px 1px rgba(88, 88, 88, 0.2);;
+}
+
+.contact-div textarea{
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: inset 2px 2px 2px 1px rgba(88, 88, 88, 0.2);
+    border: none;
+}
+
+#submit{
+    box-shadow: inset 2px 2px 2px 1px rgba(88, 88, 88, 0.2);
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+
+#submit:hover{
+    background-color: rgb(243, 245, 245);
+    cursor: pointer;
+}
+
+#submit:active{
+    background-color: rgb(231, 244, 244);
+}
+
+
 
 
 /* Media querie for laptop */
@@ -155,7 +336,15 @@ p{
         font-size: 30px;
     }
 
-    /* Body querie */
+    /* about */
+
+    h3{
+        font-size: 25px;
+    }
+
+    .contact-div input{
+        padding-right: 200px;
+    }
 }
 
 /* Flex break */
@@ -192,6 +381,52 @@ p{
         font-size: 20px;
     }
 
+    .contact-div p{
+        font-size: 18px;
+    }
+
+    .contact-div input{
+        padding-right: 50px;
+    }
+
+    .portfolio-big-box{
+        display: block;
+    }
+
+    .portfolio-big-box div{
+        margin-bottom: 20px;
+    }
+
+    #contact-me-but{
+        margin-top: 5;
+    }
+
+    .nav-but{
+        border-left: solid;
+    }
+
+    #current{
+        text-decoration: none;
+        border-bottom: solid;
+    }
+
+}
+
+@media(max-width:840px){
+    /* About page */
+    .about-page-big-box{
+        display: block;
+    }
+
+    .about-box{
+        margin-bottom: 15px;
+        background-color: white;
+        border-bottom: solid teal;
+    }
+
+    h3{
+        color: teal;
+    }
 }
 
 /* Phone querie */

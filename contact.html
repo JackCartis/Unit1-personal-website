@@ -4,11 +4,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Butcherman&family=Calligraffitti&family=Dancing+Script:wght@600&family=Lato:wght@300&family=Montserrat:wght@600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Pacifico&family=Parisienne&family=Poppins&family=Quicksand:wght@500&family=Raleway&family=Roboto&family=Tangerine:wght@700&display=swap" rel="stylesheet">
-    
+
+
+
     <link rel="stylesheet" href="style.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal website</title>
+    <title>Contact</title>
 </head>
 <body>
     <div class="header">
@@ -17,37 +19,40 @@
         </div>
 
         <div class="header-navigation">
-            <h4><a class="nav-but" id="current" href="index.html">Home</a></h4>
+            <h4><a class="nav-but" href="index.html">Home</a></h4>
             <h4><a class="nav-but" href="about.html">About</a></h4>
             <h4><a class="nav-but" href="portfolio.html">Projects</a></h4>
         </div>
     </div>
 
-    <div class="bix-box">
 
-        <div class="profile-talent-box">
-            <div>
-            <img src="profile-pic.jpg">
-            </div>
-
-            <div class="talent-prof-box">
-            <h2>Web Designer | Musician | Filmmaker</h2>
-            </div>
-        </div>
-
-
-        <div class="des-box">
-        <p>Currently studying at Fullstack Academy, coding since 1987, I always want to code some more
-        I like working in teams and love to help anyway I can.
-        </p>
-
-        <h3 id="quote">"Don't be useful. Be useless. So nobody can use you" <br> -Sun Tzu, The art of war</h3>
-        </div>
-    </div>
-
-    <a id="cont-link" href="contact.html">
-        <button id="contact-me-but">Contact me</button>
-    </a>
     
+
+    <div class="contact-div">
+        <h1 id="lets-get">Let's get in touch!</h1>
+    <form>
+        <label for="fname"><p>First name:</p></label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname"><p>Last name:</p></label>
+        <input type="text" id="lname" name="lname">
+        <label for="email"><p>Email:</p></label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="phone"><p>phone number:</p></label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+
+        <p>Type your message:</p>
+        <textarea name="message" rows="10" cols="30">
+        </textarea>
+        <br>
+
+      </form>
+      <button id="submit" type="submit" value="submit">Submit</button>
+        <br>
+      </div>
+
+      <script src="/javascript.js"></script>
+      <script src="/success.js"></script>
 </body>
 </html>
